@@ -1,0 +1,30 @@
+﻿@model IEnumerable<DatosAlumnos.Models.Alumno>
+
+@{
+    ViewBag.Title = "Alumnos";
+}
+
+<h2>Alumnos</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.Apellidos)</th>
+        <th>@Html.DisplayNameFor(model => model.Nombre)</th>
+        <th>@Html.DisplayNameFor(model => model.Edad)</th>
+        <th>@Html.DisplayNameFor(model => model.Grado)</th>
+        <th>@Html.DisplayNameFor(model => model.Nota)</th>
+       </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>@Html.DisplayFor(modelItem => item.Apellidos)</td>
+        <td>@Html.DisplayFor(modelItem => item.Nombre)</td>
+        <td>@Html.DisplayFor(modelItem => item.Edad)</td>
+        <td>@Html.DisplayFor(modelItem => item.Grado)</td>
+        <td>@Html.DisplayFor(modelItem => item.Nota)</td>
+    </tr>
+}
+</table>

@@ -1,0 +1,17 @@
+CREATE TABLE Alumnos(
+	Codigo int NOT NULL PRIMARY KEY,
+	Apellidos nvarchar(50) NULL,
+	Nombre nvarchar(50) NULL,
+	Edad int NULL,
+	Grado int NULL,
+	NotaMedia decimal(2, 1) NULL
+);
+
+INSERT INTO Alumnos Values (01,'Sanchez MYSQL','Jennifer',8,5,7.5);
+INSERT INTO Alumnos Values (02,'Gomez MYSQL','Jessica',7,5,9);
+INSERT INTO Alumnos Values (03,'Campos MYSQL','Daniela',7,5,9.5);
+INSERT INTO Alumnos Values (04,'Guitierrez MYSQL','Marcelo',8,5,8.2);
+INSERT INTO Alumnos Values (05,'Aguirre MYSQL','Erika',7,5,6.5);
+INSERT INTO Alumnos Values (06,'Londoño MYSQL','Camilo',8,5,6.8);
+INSERT INTO Alumnos Values (07,'Grajales MYSQL','Felipe',7,5,7.2);
+INSERT INTO Alumnos Values (08,'Muñoz MYSQL','Daniel',8,5,7.7);
